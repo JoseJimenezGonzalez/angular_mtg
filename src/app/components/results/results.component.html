@@ -1,0 +1,9 @@
+<div *ngIf="respuestaCartasDePadre.total_cards > 0">
+    <h3>Lista de cartas</h3>
+    <ul *ngFor="let card of respuestaCartasDePadre.data">
+        <li>
+            <p>{{card.name}}</p>
+            <img [src]="card.image_uris.normal" alt="Imagen de la carta">
+        </li>
+    </ul>
+</div>
